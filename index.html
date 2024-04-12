@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica de Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-4" href="#">Paises latinoamericanos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Configuración</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cerrar sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="container-fluid p-0 d-flex h-100">
+    <div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-success text-white offcanvas-md offcanvas-start" style="width: 280px; height: 100vh;">
+      <a href="#" class="navbar-brand">
+        <h5><i class="fa-solid fa-arrow-down" style="font-size: 20px;"></i> Mas items</h5>
+      </a>
+      <hr>
+      <ul class="mynav nav nav-pills flex-column mb-auto">
+                    <li class="nav-item mb-1">
+                        <a href="#" class="active">
+                            <i class="fa-solid fa-wave-square"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="">
+                            <i class="fa-solid fa-bell"></i>
+                            Datos de la región
+                            <span class="notification-badge">5</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            Economía
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="">
+                            <i class="fa-solid fa-star"></i>
+                            Cultura
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Comercio
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Datos curiosos
+                        </a>
+                    </li>
+                </ul>
+    </div>
+    <div></div>
+    <section class="container my-3">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-white py-4">
+          <h2 class="text-secondary">Formulario de países</h2>
+          <form>
+            <div class="mb-3">
+              <label for="for" class="form-label text-secondary"
+                > Nombre de país</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Nombre del país"
+                autofocus
+              />
+            </div>
+            <div class="mb-3">
+              <label for="Descripcion" class="form-label text-secondary">Descripción del país</label>
+              <textarea
+                class="form-control"
+                id="Descripcion"
+                placeholder="Descripción del país"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="habitantes" class="form-label text-secondary">Números de habitantes</label>
+              <input
+                type="number"
+                class="form-control"
+                id="habitantes"
+              ></input>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-success">Guardar</button>
+              <button class="btn btn-secondary">Limpiar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 bg-white py-4">
+          <h2 class="text-secondary">Listado de población de países</h2>
+          <table class="table table-hover">
+            <thead>
+              <tr class="table-warning">
+                <th class="center">#</th>
+                <th class="center">País</th>
+                <th class="center">Cantidad de habitantes (En millones)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="center">1</td>
+                <td class="center">Venezuela</td>
+                <td class="center">30</td>
+              </tr>
+              <tr>
+                <td class="center">2</td>
+                <td class="center">Brasil</td>
+                <td class="center">215</td>
+              </tr>
+              <tr>
+                <td class="center">3</td>
+                <td class="center">Argentina</td>
+                <td class="center">46</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td class="center">Colombia</td>
+                <td class="center">51</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </section>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
